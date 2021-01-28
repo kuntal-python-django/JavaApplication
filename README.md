@@ -1,6 +1,11 @@
 # Java Core and Advanced Java Tutorial
 
 ```
+# code sample
+
+
+
+
 public class Demo_Class 
 {
 	// Attributes[self, class] & Methods
