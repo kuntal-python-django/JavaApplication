@@ -1,0 +1,58 @@
+#scriptlet tag   
+<%  java source code %>  
+
+<html>
+<body>  
+<% out.print("welcome to jsp"); %>  
+</body>  
+</html>
+
+
+#expression tag
+<%=  statement %>
+<html>  
+<body>  
+<%= "welcome to jsp" %>  
+</body>  
+</html>  
+
+
+#declaration tag 
+<%!  field or method declaration %>
+<html>  
+<body>  
+<%!   
+int cube(int n){  
+return n*n*n*;  
+}  
+%>  
+<%= "Cube of 3 is:"+cube(3) %>  
+</body>  
+</html>  
+
+
+#Types of Cookie
+There are 2 types of cookies in servlets.
+
+Non-persistent cookie
+Persistent cookie
+
+Cookie ck=new Cookie("user","sonoo jaiswal");//creating cookie object  
+response.addCookie(ck);//adding cookie in the response 
+
+
+Cookie ck=new Cookie("uname",n);//creating cookie object  
+response.addCookie(ck);//adding cookie in the response  
+
+try{  
+  
+    response.setContentType("text/html");  
+    PrintWriter out = response.getWriter();  
+      
+    Cookie ck[]=request.getCookies();  
+    out.print("Hello "+ck[0].getValue());  
+  
+    out.close();  
+  
+         }catch(Exception e){System.out.println(e);}  
+    }  

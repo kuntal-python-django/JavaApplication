@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+	<servlet>  
+	<servlet-name>llll</servlet-name>  
+	<jsp-file>/welcome.jsp</jsp-file>  
+	</servlet>  
+	  
+	<servlet-mapping>  
+	<servlet-name>llll</servlet-name>  
+	<url-pattern>/welcome</url-pattern>  
+	</servlet-mapping>  
+	  
+	<context-param>  
+	<param-name>dname</param-name>  
+	<param-value>11111111111</param-value>  
+	</context-param>
+</web-app>
